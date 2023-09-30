@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+/* Quando eu tenho duas classes no mesmo elemento, não tem espaço */
+/* Se eu tivesse um elemento A com a classe "personagem" e uma classe interior B com a classe "selecionado"
+seria "main .personagem . selecionado" */
+main .personagem.selecionado {
+    display: block;
+}
+
+/* Aqui temos uma classe "imagem" de um elemento interior a outro com classe "personagem" */
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
